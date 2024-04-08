@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <!-- Currying start-->
+    <h1>1. Currying. </h1>
+    <img src="./images/currying.png" alt="">
+    <p>
+        Currying is a functional programming technique in JavaScript where a function with multiple arguments is transformed into a sequence of functions, each taking a single argument. This allows you to partially apply the function to its arguments, creating a new function that remembers the supplied arguments and expects the remaining ones.</p>
+        <h3>Advantages</h3>
+    <ul>
+        <li>Partial Application</li>
+        <li>Reusable Utility Functions</li>
+        <li>Easier Function Composition</li>
+        <li>Configurable Functions</li>
+    </ul>
+    <!-- Currying end -->
+<hr>
+    <!-- Memoization start -->
+    <h1>2. Memoization.</h1>
+    <img src="./images/memoization.png" alt="">
+    <p>Memoization is a technique used to optimize functions by caching the results of expensive function calls and returning the cached result when the same inputs occur again. This can significantly improve the performance of functions, especially those that are computationally expensive or involve recursive calculations. In JavaScript, memoization can be implemented using closures or with the help of higher-order functions.</p>
+    <h3>Advantages</h3>
+    <ul>
+        <li>Improved Performance</li>
+        <li>Reduced Recalculation</li>
+        <li>Optimizing Pure Functions</li>
+        <li>Caching Intermediates</li>
+        <li>Space-Time Tradeoff</li>
+    </ul>
+    <!-- Memoization end -->
+<hr>
+    <!-- Function Composition start -->
+    <h1>3. Function Composition.</h1>
+    <img src="./images/func-composition.png" alt="">
+    <p>Function composition is a powerful technique in JavaScript that involves combining two or more functions to produce a new function. This allows you to create complex behavior by chaining together simpler functions. Function composition can be incredibly useful for writing modular, reusable, and declarative code.</p>
+    <h3>Advantages</h3>
+    <ul>
+        <li>Code Reusability</li>
+        <li>Modularity</li>
+        <li>Declarative Code</li>
+        <li>Pipeline Processing</li>
+        <li>Enhanced Abstraction</li>
+        <li>Immutable Data Transformations</li>
+    </ul>
+    <!-- Function Composition end -->
+<hr>
+    <!-- Generators start -->
+    <h1>4. Generators.</h1>
+    <img src="./images/generators.png" alt="">
+    <p>Generator functions in JavaScript are special functions that can pause and resume their execution, allowing for the generation of a sequence of values lazily. They are declared using the function* syntax and utilize the yield keyword to yield values one at a time.</p>
+    <h3>Advantages</h3>
+    <ul>
+        <li>Lazy Evaluation</li>
+        <li>Infinite Sequences</li>
+        <li>Concurrency Control</li>
+        <li>Stateful Iteration</li>
+        <li>Iterators</li>
+        <li>Asynchronous Programming</li>
+    </ul>
+    <!-- Generators end -->
+<hr>
+    <!-- Noop start -->
+    <h1>5. Noop.</h1>
+    <img src="./images/noop.png" alt="">
+    <p>A "Noop" function, short for "No Operation," is a function that does nothing when called. While it might seem pointless at first, Noop functions can have several practical applications:</p>
+    <h3>Advantages</h3>
+    <ul>
+        <li>Default or Placeholder Functions</li>
+        <li>Conditional Execution</li>
+        <li>Mocking and Testing</li>
+        <li>Debugging and Logging</li>
+        <li>API Compatibility</li>
+    </ul>
+    <!-- Noop end -->
+<hr>
+    <!-- Throttling and Debouncing start -->
+    <h1>6-7. Throttling and Debouncing.</h1>
+    <p>Throttling and debouncing are two techniques used in JavaScript to improve the performance and efficiency of event handlers, especially for events that can be fired rapidly, such as scrolling, resizing, or typing. Both techniques help to limit the number of times a function is executed, but they do so in different ways, making them useful in various scenarios:</p>
+    <img src="./images/throt-debounce.png" alt="">
+    <p>A "Noop" function, short for "No Operation," is a function that does nothing when called. While it might seem pointless at first, Noop functions can have several practical applications:</p>
+    <h3>Advantages</h3>
+    <ul>
+        <li>Throttling</li>
+        <ul>
+            <li>Throttling limits the number of times a function can be executed within a specified time interval.</li>
+            <li>It ensures that the function is executed at most once per specified interval, regardless of how many times the event is fired.</li>
+            <li>Throttling is useful when you want to ensure that a function is not executed too frequently, such as for performance optimization or rate limiting.</li>
+            <li>Common use cases include scroll events, resize events, and mousemove events.</li>
+        </ul>
+        <li>Debouncing</li>
+        <ul>
+            <li>Debouncing delays the execution of a function until after a specified time interval has elapsed since the last time the event was fired.</li>
+            <li>It ensures that the function is only executed once after the event has stopped firing for the specified interval.</li>
+            <li>Debouncing is useful when you want to wait for a pause in the event firing before executing the function, such as for handling user input or search queries.</li>
+            <li>Common use cases include input events, search input, and auto-saving forms.</li>
+        </ul>
+    </ul>
+    <p>Test debounce here.</p>
+    <input type="text" id="myInput" placeholder="Type something...">
+    <!-- Throttling and Debouncing end -->
+<hr>
+    <script src="./script.js"></script>
+</body>
+</html>
